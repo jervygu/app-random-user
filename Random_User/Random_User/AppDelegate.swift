@@ -15,13 +15,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        initializeWindow()
+        
+        return true
+    }
+    
+
+    // MARK: - Window Setup
+    
+    fileprivate func initializeWindow() {
         let window = UIWindow(frame: UIScreen.main.bounds)
         
         let rootViewController = MainViewController()
-        window.rootViewController = rootViewController
+        let navigationController = UINavigationController(rootViewController: rootViewController)
+        
+        window.rootViewController = navigationController
         window.makeKeyAndVisible()
         self.window = window
-        return true
     }
     
     
