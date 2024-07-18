@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Random_User" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="qc0-Yr-EvC" id="ioE-dg-IOk"/>
                 <outlet property="tableView" destination="el3-KF-IAf" id="kGu-XJ-GEM"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,6 +24,10 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="qc0-Yr-EvC">
+                    <rect key="frame" x="169" y="387.66666666666669" width="37" height="37"/>
+                    <color key="color" systemColor="systemGray2Color"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -31,6 +36,8 @@
                 <constraint firstItem="el3-KF-IAf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Hgg-b6-qMC"/>
                 <constraint firstItem="el3-KF-IAf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eVQ-bg-UTm"/>
                 <constraint firstAttribute="bottom" secondItem="el3-KF-IAf" secondAttribute="bottom" id="mer-Au-DEY"/>
+                <constraint firstItem="qc0-Yr-EvC" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="pe8-eb-G7y"/>
+                <constraint firstItem="qc0-Yr-EvC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="uxT-5E-w4F"/>
             </constraints>
             <point key="canvasLocation" x="138" y="20"/>
         </view>
@@ -38,6 +45,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
