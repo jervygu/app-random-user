@@ -12,8 +12,8 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .systemRed
-        title = "Home"
+        self.view.backgroundColor = .systemRed
+        self.title = "Home"
     }
 
 
